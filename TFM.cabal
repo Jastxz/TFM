@@ -1,0 +1,32 @@
+cabal-version:   3.4
+name:            TFM
+version:         0.1.0.0
+synopsis:
+  A proof of classic potentials. Full name: Adversarial-Search-VS-Not-Supervised-Machine-Learning
+
+-- description:
+license:
+author:          Javier Gil Blázquez
+maintainer:      javicraft14@gmail.com
+copyright:       Copyright © 2024, Javier Gil Blázquez
+category:        Game
+build-type:      Simple
+extra-doc-files:
+  CHANGELOG.md
+  REAMDE.md
+
+common warnings
+  ghc-options: -Wall
+
+executable TFM
+  import:           warnings
+  main-is:          Main.hs
+
+  -- other-modules:
+  -- other-extensions:
+  build-depends:
+    , base                ^>=4.19.1.0
+    , ComponentsForGloss  >=1.0.0.0
+
+  hs-source-dirs:   app
+  default-language: Haskell2010
